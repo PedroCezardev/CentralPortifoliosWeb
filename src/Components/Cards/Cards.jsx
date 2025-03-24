@@ -3,14 +3,12 @@ import { useEffect } from 'react';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
 // importando images
-import paginaVendas from "../../assets/PaginaVendas.png";
+import paginaVendas from "../../assets/PortifolioVendas.png";
 import meuPortifolio from "../../assets/MeuPortifolio2.png";
-import nextechWebsite from "../../assets/NextechWebsite.png";
-import instagramWhite from "../../assets/InstagramWhite.png";
+import instagramBlack from "../../assets/InstagramBlack.png";
 import tiktokWhite from "../../assets/TiktokWhite.png";
 import linkedlin from "../../assets/LinkedlinWhite.png"
-import githubBlack from "../../assets/GithubBlack.png";
-import nextechIcon from "../../assets/LogoNexTech.png";
+import githubWhite from "../../assets/GithubWhite.png";
 // importando icons
 import { MdArrowOutward } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
@@ -26,7 +24,7 @@ const CardList = [
         icon: <MdArrowOutward />,
         title: "Realizar orçamento",
         description: "Solicite um orçamento para ter seu próprio site feito por mim.",
-        link: "https://api.whatsapp.com/send?phone=985964761",
+        link: "https://pedrocezar-orcamento.vercel.app/",
     },
     {
         id: 2,
@@ -38,22 +36,14 @@ const CardList = [
     },
     {
         id: 3,
-        image: nextechWebsite,
-        icon: <img src={nextechIcon} alt="Nextech Icon" />,
-        title: "Website da NEXTECH",
-        description: "Acesse o website da empresa de desenvolvimento de sites na qual sou sócio.",
-        link: "",
-    },
-    {
-        id: 4,
-        image: instagramWhite,
+        image: instagramBlack,
         icon: <FaInstagramSquare />,
         title: "Perfil no Instagram",
         description: "Vídeos e conteúdos sobre tecnologia gratuitos.",
         link: "https://www.instagram.com/opedro.sites/",
     },
     {
-        id: 5,
+        id: 4,
         image: tiktokWhite,
         icon: <AiFillTikTok />,
         title: "Perfil no Tiktok",
@@ -61,7 +51,7 @@ const CardList = [
         link: "https://www.tiktok.com/@opedro.sites",
     },
     {
-        id: 6,
+        id: 5,
         image: linkedlin,
         icon: <FaLinkedin />,
         title: "Perfil no Linkedin",
@@ -69,8 +59,8 @@ const CardList = [
         link: "https://www.linkedin.com/in/pedro-cezarr/",
     },
     {
-        id: 7,
-        image: githubBlack,
+        id: 6,
+        image: githubWhite,
         icon: <FaGithub />,
         title: "Perfil no Github",
         description: "Onde eu publico meu projeto pessoais e acadêmicos.",
@@ -90,7 +80,7 @@ const CardLinks = () => {
     return (
       <section className={style.container}>
         {CardList.map((data, i) => (
-            <a key={data.id} className={style.content} data-aos="fade-up" data-aos-delay={i * 200}
+            <a key={data.id} className={style.content} data-aos="fade-up" data-aos-delay={i * 150}
                 href={data.link} target="_blank" rel="noopener noreferrer"
             >
                 <div className={style.background} 

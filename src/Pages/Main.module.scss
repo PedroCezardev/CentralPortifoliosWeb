@@ -44,8 +44,12 @@ body{
         align-items: center;
         justify-content: center;
     
-        h1{
-           margin-bottom: 35px; 
+        img{
+            width: 350px;
+
+            @media screen and (max-width: 768px) {
+                width: 250px;
+            }
         }
     }
 
@@ -70,7 +74,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 120px;
+        margin-top: 0px;
         cursor: pointer;
         position: relative;
 
@@ -97,19 +101,6 @@ body{
         border-radius: 100%;
         animation: pulse 3s infinite;
     }
-    
-    @keyframes pulse {
-        0%, 100%{
-            opacity: 0;
-        }
-        15%, 45%{
-            opacity: 1;
-        }
-        60%{
-            box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
-            opacity: 0;
-        }
-    }
 
     .titles{
         display: flex;
@@ -123,6 +114,42 @@ body{
 
     } 
 
+}
+
+// .cardContainer {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100vh;
+//     margin: auto;
+// }
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 350px;
+
+        @media screen and (max-width: 768px) {
+            width: 250px;
+        }
+    }
+}
+
+@keyframes pulse {
+    0%, 100%{
+        opacity: 0;
+    }
+    15%, 45%{
+        opacity: 1;
+    }
+    60%{
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -172,13 +199,3 @@ body{
     }
 
 }
-
-// .cardContainer {
-//     display: flex;
-//     justify-content: center;
-//     align-items: flex-start; /* Mantém o conteúdo alinhado ao topo */
-//     flex-grow: 1; /* Para que ocupe o restante da altura da tela */
-//     width: 100%; /* Garante que ocupe toda a largura */
-//     height: auto; /* Remove qualquer limitação de altura */
-//     padding: 20px; /* Garante que o CardLinks ocupe toda a largura disponível */
-// }
