@@ -8,12 +8,13 @@ body{
 }
 
 // .container {
-//     display: grid;
-//     grid-template-columns: 1fr; /* Cards responsivos */
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     height: auto;
 //     gap: 20px;
 //     padding: 20px;
-//     justify-items: center;
-//     align-items: start;
 //     width: 100%; 
 // }
 
@@ -52,7 +53,7 @@ body{
             width: 400px;
 
             @media screen and (max-width: 768px) {
-                width: 200px;
+                width: 280px;
             }
         }
     }
@@ -139,7 +140,7 @@ body{
         width: 400px;
 
         @media screen and (max-width: 768px) {
-            width: 250px;
+            width: 280px;
         }
     }
 }

@@ -23,30 +23,30 @@ const Main = () => {
 
   return (
     <section className={style.container}>
-        <nav className={style.navbar}>
-          <ParticlesComponent />
-          <div className={style.content}>
-            <div className={style.logo}  data-aos="fade-up" data-aos-delay="200">
-              <img src={logoPedro} alt="Logo" />
-            </div>
-            <div className={style.profile} data-aos="fade-up" data-aos-delay="200">
-              <img src={perfilPedro} alt="" />
-              <div className={style.titles}>
-                <h1>Pedro Cezar</h1>
-                <p>Criador de Produtos Digitais</p>
-              </div>
+      <nav className={style.navbar}>
+        <ParticlesComponent />
+        <div className={style.content}>
+          <div className={style.logo}  data-aos="fade-up" data-aos-delay="200">
+            <img src={logoPedro} alt="Logo" />
+          </div>
+          <div className={style.profile} data-aos="fade-up" data-aos-delay="200">
+            <img src={perfilPedro} alt="" />
+            <div className={style.titles}>
+              <h1>Pedro Cezar</h1>
+              <p>Criador de Produtos Digitais</p>
             </div>
           </div>
-          <div onClick={scrollToCards} className={style.scroll} data-aos="fade-up" data-aos-delay="200">
-            <BiSolidDownArrow className='bx bxs-down-arrow' /> 
-          </div>
-        </nav>
-        <div className={style.cardContainer} id='cards' >
-            <CardLinks />
         </div>
-        <div className={style.footer} data-aos="fade-up" data-aos-delay="200">
-          <img src={logoPedro} alt="Logo" />
+        <div onClick={scrollToCards} className={style.scroll} data-aos="fade-up" data-aos-delay="200">
+          <BiSolidDownArrow className='bx bxs-down-arrow' /> 
         </div>
+      </nav>
+      <div className={style.cardContainer} id='cards' >
+          <CardLinks />
+      </div>
+      <div className={style.footer} data-aos="fade-up" data-aos-delay="200">
+        <img src={logoPedro} alt="Logo" />
+      </div>
     </section>
   )
 }
