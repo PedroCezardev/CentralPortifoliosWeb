@@ -3,7 +3,7 @@
 body{
     margin: 0;
     padding: 0; 
-    background-color: #1A1C2F;
+    background-color: #040122;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -43,12 +43,16 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 1000px) {
+            height: 300px;
+        }
     
         img{
-            width: 350px;
+            width: 400px;
 
             @media screen and (max-width: 768px) {
-                width: 250px;
+                width: 300px;
             }
         }
     }
@@ -129,12 +133,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 200px;
 
     img{
-        width: 350px;
+        width: 400px;
 
         @media screen and (max-width: 768px) {
-            width: 250px;
+            width: 300px;
         }
     }
 }

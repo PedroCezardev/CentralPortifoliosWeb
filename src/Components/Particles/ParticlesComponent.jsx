@@ -28,7 +28,7 @@ const ParticlesComponent = (props) => {
   const options = useMemo(
     () => ({
       background: {
-        color: { value: "#1A1C2F" },
+        color: { value: "#040122" },
       },
       fpsLimit: 120,
       interactivity: {

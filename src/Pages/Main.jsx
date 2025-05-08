@@ -3,7 +3,7 @@ import style from "./Main.module.scss";
 import CardLinks from "../Components/Cards/Cards";
 import 'aos/dist/aos.css'; 
 import * as AOS from 'aos';
-import logoPedro from "../assets/logoWebTech.png";
+import logoPedro from "../assets/LOGO-COMPLETA-PRINCIPAL.png";
 import perfilPedro from "../assets/PerfilPedro1x1.jpeg";
 import { BiSolidDownArrow } from "react-icons/bi";
 import ParticlesComponent from '../Components/Particles/ParticlesComponent';
@@ -44,7 +44,7 @@ const Main = () => {
         <div className={style.cardContainer} id='cards' >
             <CardLinks />
         </div>
-        <div className={style.footer}  data-aos="fade-up" data-aos-delay="200">
+        <div className={style.footer}  data-aos="fade-up" data-aos-delay="400">
           <img src={logoPedro} alt="Logo" />
         </div>
     </section>
