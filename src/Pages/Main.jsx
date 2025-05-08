@@ -44,7 +44,7 @@ const Main = () => {
         <div className={style.cardContainer} id='cards' >
             <CardLinks />
         </div>
-        <div className={style.footer}  data-aos="fade-up" data-aos-delay="400">
+        <div className={style.footer}  data-aos="fade-up" data-aos-delay="200">
           <img src={logoPedro} alt="Logo" />
         </div>
     </section>
