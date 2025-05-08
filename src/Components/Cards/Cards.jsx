@@ -31,7 +31,7 @@ const CardList = [
         image: meuPortifolio,
         icon: <CgWebsite />,
         title: "Portifólio Profissional",
-        description: "Analise meu portfólio para conhecer meus projetos acadêmicos e as tecnologias com as quais tenho experiência.",
+        description: "Portfólio para armazenar meus projetos acadêmicos e as tecnologias que tenho experiência.",
         link: "https://meu-portifolio-lime.vercel.app/",
     },
     {
