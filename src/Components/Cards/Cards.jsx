@@ -23,7 +23,7 @@ const CardList = [
         image: paginaVendas,
         icon: <MdArrowOutward />,
         title: "Realizar orçamento",
-        description: "Solicite um orçamento para ter seu próprio site e alavante as suas vendas.",
+        description: "Solicite um orçamento para ter seu próprio site e alavanque as suas vendas.",
         link: "https://pedrocezar-orcamento.vercel.app/",
     },
     {
