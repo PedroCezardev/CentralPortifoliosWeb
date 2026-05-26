@@ -15,6 +15,14 @@ const CardList = [
         title: "Realizar orçamento",
         description: "Solicite um orçamento para o seu projeto",
         link: "https://pedrocezar-orcamento.vercel.app/",
+        isHighlighted: true
+    },
+    {
+        id: 2,
+        icon: <CgWebsite />,
+        title: "LNKD PERFIL",
+        description: "Adquira seu link na bio profissional",
+        link: "https://www.lnkdperfil.com.br/",
     },
     {
         id: 3,
@@ -78,7 +86,7 @@ const CardLinks = () => {
                 const cardProps = data.isComingSoon ? {} : { href: data.link, target: "_blank", rel: "noopener noreferrer" };
 
                 return (
-                    <CardElement key={data.id} className={`${style.content} ${data.isComingSoon ? style.comingSoon : ''}`} data-aos="fade-up" data-aos-delay={i * 100} {...cardProps}>
+                    <CardElement key={data.id} className={`${style.content} ${data.isComingSoon ? style.comingSoon : ''} ${data.isHighlighted ? style.highlighted : ''}`} data-aos="fade-up" data-aos-delay={i * 100} {...cardProps}>
                         <div className={style.iconWrapper}>
                             {data.icon}
                         </div>

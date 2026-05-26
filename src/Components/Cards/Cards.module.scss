@@ -15,7 +15,7 @@
   text-decoration: none;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   box-sizing: border-box;
   
   &:hover:not(.comingSoon) {
@@ -35,6 +35,27 @@
   }
 }
 
+.highlighted {
+  border-color: rgba(75, 60, 255, 0.5);
+  background: rgba(75, 60, 255, 0.08);
+  
+  .iconWrapper {
+    background: #4B3CFF;
+    color: #FFFFFF;
+  }
+
+  .arrowIcon {
+    color: #4B3CFF;
+  }
+  
+  &:hover:not(.comingSoon) {
+    border-color: #4B3CFF;
+    background: rgba(75, 60, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(75, 60, 255, 0.25);
+  }
+}
+
 .iconWrapper {
   display: flex;
   align-items: center;
@@ -45,7 +66,7 @@
   background: rgba(16, 4, 136, 0.4);
   color: #fff;
   font-size: 1.2rem;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   flex-shrink: 0;
 }
 
@@ -83,7 +104,7 @@
 .arrowIcon {
   color: rgba(255, 255, 255, 0.3);
   font-size: 1.2rem;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .comingSoon {

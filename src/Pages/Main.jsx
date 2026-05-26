@@ -5,6 +5,8 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import perfilPedro from "../assets/image-pedro1.jpeg";
 import logoPedro from "../assets/LOGO-COMPLETA-PRINCIPAL.png";
+import lnkdPerfilLogo from "../assets/LNKD-PERFIL.png";
+import wordmarkLogo from "../assets/WORDMARK-BRANCO.png";
 import ParticlesComponent from '../Components/Particles/ParticlesComponent';
 
 const Main = () => {
@@ -27,7 +29,7 @@ const Main = () => {
             <img src={perfilPedro} alt="Pedro Cezar" className={style.profileImage} />
           </div>
 
-          <h1 className={style.name}>Pedro Cezar</h1>
+          <img src={wordmarkLogo} alt="Pedro Cezar" className={style.wordmarkLogo} />
           <p className={style.tagline}>Transformando ideias em soluções digitais de alto impacto!</p>
 
           <div className={style.statsContainer}>
@@ -61,7 +63,7 @@ const Main = () => {
       <footer className={style.pageFooter} data-aos="fade-up" data-aos-delay="200">
         <div className={style.footerContent}>
           <div className={style.footerText}>
-            <h2>LNKD PERFIL</h2>
+            <img src={lnkdPerfilLogo} alt="LNKD Perfil" className={style.lnkdLogo} />
             <p>Eleve seu posicionamento digital</p>
           </div>
           <div className={style.footerDivider}></div>
