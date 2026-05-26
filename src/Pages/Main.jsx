@@ -1,16 +1,13 @@
 import { useEffect } from 'react';
 import style from "./Main.module.scss";
 import CardLinks from "../Components/Cards/Cards";
-import 'aos/dist/aos.css'; 
-import * as AOS from 'aos';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import perfilPedro from "../assets/image-pedro1.jpeg";
 import logoPedro from "../assets/LOGO-COMPLETA-PRINCIPAL.png";
-import perfilPedro from "../assets/PerfilPedro1x1.jpeg";
-import { BiSolidDownArrow } from "react-icons/bi";
+import lnkdPerfilLogo from "../assets/LNKD-PERFIL.png";
+import wordmarkLogo from "../assets/WORDMARK-BRANCO.png";
 import ParticlesComponent from '../Components/Particles/ParticlesComponent';
-
-const scrollToCards = () => {
-  document.getElementById("cards")?.scrollIntoView({ behavior: "smooth" });
-};
 
 const Main = () => {
 
@@ -18,35 +15,64 @@ const Main = () => {
     AOS.init({
       duration: 1000,
       offset: 50,
+      once: true
     });
   }, []);
 
   return (
     <section className={style.container}>
-      <nav className={style.navbar}>
-        <ParticlesComponent />
-        <div className={style.content}>
-          <div className={style.logo}  data-aos="fade-up" data-aos-delay="200">
-            <img src={logoPedro} alt="Logo" />
+      <ParticlesComponent />
+
+      <div className={style.glassWrapper} data-aos="fade-up">
+        <header className={style.header}>
+          <div className={style.profileImageWrapper}>
+            <img src={perfilPedro} alt="Pedro Cezar" className={style.profileImage} />
           </div>
-          <div className={style.profile} data-aos="fade-up" data-aos-delay="200">
-            <img src={perfilPedro} alt="" />
-            <div className={style.titles}>
-              <h1>Pedro Cezar</h1>
-              <p>Criador de Produtos Digitais</p>
+
+          <img src={wordmarkLogo} alt="Pedro Cezar" className={style.wordmarkLogo} />
+          <p className={style.tagline}>Transformando ideias em soluções digitais de alto impacto!</p>
+
+          <div className={style.statsContainer}>
+            <div className={style.statItem}>
+              <h3>Web</h3>
+              <p>Designer</p>
+            </div>
+            <div className={style.statDivider}></div>
+            <div className={style.statItem}>
+              <h3>+3 Anos</h3>
+              <p>Experiência</p>
+            </div>
+            <div className={style.statDivider}></div>
+            <div className={style.statItem}>
+              <h3>SIN</h3>
+              <p>Graduado</p>
             </div>
           </div>
-        </div>
-        <div onClick={scrollToCards} className={style.scroll} data-aos="fade-up" data-aos-delay="200">
-          <BiSolidDownArrow className='bx bxs-down-arrow' /> 
-        </div>
-      </nav>
-      <div className={style.cardContainer} id='cards' >
+        </header>
+
+        <div className={style.cardContainer} id='cards'>
           <CardLinks />
+        </div>
+
+        <div className={style.footerLogoWrapper}>
+          <img src={logoPedro} alt="Logo" className={style.footerLogo} />
+          <p className={style.copyright}>© 2026 PEDRO CEZAR SITES. Todos os direitos reservados.</p>
+        </div>
       </div>
-      <div className={style.footer} data-aos="fade-up" data-aos-delay="200">
-        <img src={logoPedro} alt="Logo" />
-      </div>
+
+      <footer className={style.pageFooter} data-aos="fade-up" data-aos-delay="200">
+        <div className={style.footerContent}>
+          <div className={style.footerText}>
+            <img src={lnkdPerfilLogo} alt="LNKD Perfil" className={style.lnkdLogo} />
+            <p>Eleve seu posicionamento digital</p>
+          </div>
+          <div className={style.footerDivider}></div>
+          <a href="https://pedrocezar-orcamento.vercel.app/" target="_blank" rel="noopener noreferrer" className={style.footerButton}>
+            TENHA JÁ O SEU
+          </a>
+        </div>
+      </footer>
+
     </section>
   )
 }
