@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import perfilPedro from "../assets/image-pedro1.jpeg";
 import logoPedro from "../assets/LOGO-COMPLETA-PRINCIPAL.png";
-import ParticlesComponent from '../Components/Particles/ParticlesComponent';
+import { GridScan } from '../Components/GridScan/GridScan';
 
 const Main = () => {
 
@@ -19,7 +19,9 @@ const Main = () => {
 
   return (
     <section className={style.container}>
-      <ParticlesComponent />
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: 0, opacity: 0.8 }}>
+        <GridScan linesColor="#100488" scanColor="#4B3CFF" />
+      </div>
 
       <div className={style.glassWrapper} data-aos="fade-up">
         <header className={style.header}>
