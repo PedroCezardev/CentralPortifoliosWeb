@@ -69,7 +69,7 @@ const Main = () => {
             <p>Eleve seu posicionamento digital</p>
           </div>
           <div className={style.footerDivider}></div>
-          <a href="https://pedrocezar-orcamento.vercel.app/" target="_blank" rel="noopener noreferrer" className={style.footerButton}>
+          <a href="https://www.lnkdperfil.com.br/solicitar/vortex" target="_blank" rel="noopener noreferrer" className={style.footerButton}>
             TENHA JÁ O SEU
           </a>
         </div>
