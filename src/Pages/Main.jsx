@@ -6,8 +6,9 @@ import AOS from 'aos';
 import perfilPedro from "../assets/image-pedro1.jpeg";
 import logoPedro from "../assets/LOGO-COMPLETA-PRINCIPAL.png";
 import lnkdPerfilLogo from "../assets/LNKD-PERFIL.png";
-import wordmarkLogo from "../assets/WORDMARK-BRANCO.png";
+import wordmarkLogo from "../assets/LOGO-COMPLETA-PRINCIPAL.png";
 import ParticlesComponent from '../Components/Particles/ParticlesComponent';
+import CustomCursor from '../Components/CustomCursor/CustomCursor';
 
 const Main = () => {
 
@@ -21,6 +22,7 @@ const Main = () => {
 
   return (
     <section className={style.container}>
+      <CustomCursor />
       <ParticlesComponent />
 
       <div className={style.glassWrapper} data-aos="fade-up">

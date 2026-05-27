@@ -22,3 +22,22 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040122; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4B3CFF;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5b4dff;
+}
