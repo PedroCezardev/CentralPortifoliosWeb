@@ -12,6 +12,8 @@
   "dependencies": {
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "aos": "^2.3.4",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",

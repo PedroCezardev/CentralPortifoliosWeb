@@ -66,7 +66,7 @@ const Main = () => {
         <div className={style.footerContent}>
           <div className={style.footerText}>
             <img src={lnkdPerfilLogo} alt="LNKD Perfil" className={style.lnkdLogo} />
-            <p>Eleve seu posicionamento digital</p>
+            <p>O link essencial. <br /> Feito exclusivamente para você.</p>
           </div>
           <div className={style.footerDivider}></div>
           <a href="https://www.lnkdperfil.com.br/solicitar/vortex" target="_blank" rel="noopener noreferrer" className={style.footerButton}>
